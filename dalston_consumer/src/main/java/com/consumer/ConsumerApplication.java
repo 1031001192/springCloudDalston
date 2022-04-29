@@ -3,8 +3,7 @@ package com.consumer;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 /**
  * @Description: consumer
@@ -14,16 +13,12 @@ import org.springframework.web.client.RestTemplate;
  * @Copyright 版权归个人所有
  * @CreateTime: 2022/4/29 12:05
  */
+@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class consumerApplication {
-
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
+public class ConsumerApplication {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(consumerApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(ConsumerApplication.class).web(true).run(args);
     }
 }
