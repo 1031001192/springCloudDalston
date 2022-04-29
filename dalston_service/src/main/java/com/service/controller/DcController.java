@@ -1,4 +1,4 @@
-package com.service;
+package com.service.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Description: DcController
- * @Title: com.service.DcController
+ * @Title: com.service.controller.DcController
  * @Package com.service
  * @Author: LiBing
  * @Copyright 版权归个人所有
