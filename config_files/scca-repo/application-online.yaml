@@ -1,0 +1,15 @@
+com.didispace: diyongchao
+
+aaa:
+  bbb: 111
+  ccc: 222
+  ddd: 333
+
+xxx.yyy:
+  - 88
+  - 99
+  - 11
+
+mm:
+  - "aa"
+  - "bb"
