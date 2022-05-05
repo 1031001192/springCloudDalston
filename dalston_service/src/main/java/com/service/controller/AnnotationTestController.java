@@ -1,7 +1,9 @@
 package com.service.controller;
 
+import com.service.annotation.LogAspect;
 import com.service.annotation.LoginRequired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -24,5 +26,11 @@ public class AnnotationTestController {
     @GetMapping("/sourceB")
     public String sourceB(){
         return "你正在访问sourceB资源";
+    }
+
+    @LogAspect
+    @GetMapping("/sourceC/{source_name}")
+    public String sourceC(@PathVariable("source_name") String sourceName){
+        return "你正在访问sourceC资源";
     }
 }
