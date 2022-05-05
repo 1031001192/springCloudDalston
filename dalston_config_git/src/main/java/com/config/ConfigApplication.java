@@ -10,7 +10,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @Package com.config
  * @Author: LiBing
  * @Copyright 版权归个人所有
- * @CreateTime: 2022/4/30 11:25
+ * @CreateTime: 2022/4/30 11:26
  */
 @EnableConfigServer
 @SpringBootApplication
