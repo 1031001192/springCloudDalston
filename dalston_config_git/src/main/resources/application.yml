@@ -11,4 +11,4 @@ spring:
 #          password:
 
 server:
-  port: 120121
+  port: 1201
